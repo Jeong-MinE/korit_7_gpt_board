@@ -174,7 +174,7 @@ export const pageNumbers = css`
     display: flex;
     width: 25rem;
 
-    & > div {
+    & > button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -187,9 +187,14 @@ export const pageNumbers = css`
         font-weight: 600;
         font-size: 1.2rem;
         cursor: pointer;
+        background-color: #fafafa;
 
         &:hover {
-            background-color: #fafafa;
+            background-color: #eeeeee;
+        }
+
+        &:disabled {
+            background-color: #ffffff;
         }
 
         & > span {
